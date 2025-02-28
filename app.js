@@ -37,7 +37,7 @@ function retrieveContacts(){
 
     xhr.onreadystatechange = function() {
         if(xhr.readyState === 4){
-            var contacts = JSON.parse(xhr.response).contaxts;
+            var contacts = JSON.parse(xhr.response).contacts;
             displayContacts(contacts);
             const localStorage = window.localStorage;
             if(localStorage){
